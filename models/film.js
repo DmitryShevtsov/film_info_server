@@ -4,11 +4,11 @@ module.exports = (sequelize, DataTypes) => {
     title: DataTypes.STRING,
     release: DataTypes.STRING,
     format: DataTypes.STRING,
+    stars: DataTypes.STRING,
     image: DataTypes.STRING
   }, {});
   Film.associate = function(models) {
     // associations can be defined here
-    Film.hasMany(models.FilmStar, {foreignKey: 'filmId'});
   };
   return Film;
 };

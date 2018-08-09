@@ -16,7 +16,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       format: {
-        isIn: [['VHS', 'DVD', 'Blu-Ray']],
+        isIn: [['VHS', 'Blue-Ray', 'DVD']],
+        type: Sequelize.STRING
+      },
+      stars: {
         type: Sequelize.STRING
       },
       image: {
